@@ -20,3 +20,21 @@ It has 3 different tables :
 **1. Reaction Table**
 **2. Content table**
 **3. Reaction type table**
+
+## Data Transformation/Cleaning
+
+- I find and replaced some special characters that are in some columns
+- I deleted blank space
+- I renamed some columns
+
+## Date Modelling
+
+The data is a three table dataset and so i just merge the columns together using the VLOOKUP formula
+The new table now consist of 8 columns namely; _No., ContentID, ReactionType, DateTime, ContentType, Categories, Sentiment, Score_
+
+## Problem Statement 1
+
+1.  The client wanted to see “An analysis of their content categories showing the top 5 categories with the largest popularity”
+
+I use the pivot table to check for the categories with the highest score
+The insight shows **Animal, Science, Eating healthy, Technology and food** are the Top 5 Content Categories
